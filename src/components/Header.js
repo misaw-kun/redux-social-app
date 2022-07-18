@@ -10,6 +10,7 @@ export default function Header() {
             fontWeight: "bold",
             padding: "5px",
             transform: "rotate(-2deg)",
+            boxShadow: "6px 6px 0px rgba(0, 0, 0, 0.1)",
           }}
         >
           <img

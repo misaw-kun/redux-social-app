@@ -44,6 +44,10 @@ export default function CreatePost({ type, id }) {
   const [change, setChange] = useState("");
 
   function handleClose() {
+    setFormData({
+      title: "",
+      content: "",
+    });
     setError({
       title: "",
       content: "",
@@ -120,6 +124,7 @@ export default function CreatePost({ type, id }) {
       )}
 
       <Modal
+        onKeyDown={(e) => e.stopPropagation()}
         style={{
           padding: "0",
         }}
